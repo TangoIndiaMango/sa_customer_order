@@ -46,7 +46,7 @@ customer_order_service/
 
 - Python 3.x
 - Django & Django REST Framework
-- PostgreSQL
+- DbSqlite
 - Africa's Talking SMS Gateway
 - OpenID Connect for authentication
 - Docker
@@ -55,7 +55,7 @@ customer_order_service/
 ## Prerequisites
 
 - Python 3.x
-- PostgreSQL
+- DbSqlite
 - Docker (optional)
 - Africa's Talking Account
 - OpenID Connect Provider credentials
