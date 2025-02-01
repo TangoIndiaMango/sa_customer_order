@@ -91,8 +91,8 @@ python manage.py runserver
 
 ## API Endpoints
 ### Authentication
-- POST /api/auth/token/ - Obtain authentication token
-- POST /api/auth/refresh/ - Refresh authentication token
+- POST /auth/registration/ - Create User
+- POST /auth/login/ - Login User
 ### Customers
 - GET /api/customers/ - List all customers
 - POST /api/customers/ - Create a new customer
