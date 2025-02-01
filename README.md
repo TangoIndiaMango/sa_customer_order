@@ -1,8 +1,9 @@
- |── .github
+.
+├── .github
 │   └── workflows
 │       └── ci-cd.yml
 ├── orders
-│   ├── init .py
+│   ├── __init__.py
 │   ├── admin.py
 │   ├── apps.py
 │   ├── models.py
@@ -12,12 +13,12 @@
 │   ├── urls.py
 │   └── views.py
 ├── customer_order_service
-│   ├── init .py
+│   ├── __init__.py
 │   ├── asgi.py
 │   ├── settings.py
 │   ├── urls.py
 │   └── wsgi.py
-├──Customer Order.postman_collection.json
+├── Customer Order.postman_collection.json
 ├── .env.example
 ├── .gitignore
 ├── Dockerfile
