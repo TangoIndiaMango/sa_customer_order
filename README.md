@@ -64,7 +64,7 @@ customer_order_service/
 
 1. Clone the repository
 ```bash
-git clone <your-repository-url>
+git clone (https://github.com/TangoIndiaMango/sa_customer_order)[Current Repo]
 cd sa_interview_order
 
 2. Create a virtual environment
