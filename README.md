@@ -1,4 +1,10 @@
-.
+# Customer Order Management API
+This repository contains the source code for a RESTful API service built with Django for managing customers and their orders. The API is designed to handle CRUD operations for customers and orders, and it also integrates with OpenID Connect for authentication and SMS notifications via Africa's Talking.
+
+## Project Structure
+The project follows a standard Django project structure:
+```bash
+customer_order_service/
 ├── .github
 │   └── workflows
 │       └── ci-cd.yml
@@ -25,10 +31,7 @@
 ├── README.md
 ├── manage.py
 └── requirements.txt
-
-# Customer Order Management API
-
-A RESTful API service built with Django for managing customers and their orders, featuring OpenID Connect authentication and SMS notifications via Africa's Talking.
+```
 
 ## Features
 
