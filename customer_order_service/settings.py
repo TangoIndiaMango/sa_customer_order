@@ -148,8 +148,10 @@ AUTHENTICATION_BACKENDS = (
 )
 
 
-SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = "your-client-id"
-SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = "your-client-secret"
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = os.getenv("GOOGLE_OAUTH2_KEY", default="asdopqwerty2")
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = os.getenv(
+    "GOOGLE_OAUTH2_SECRET", default="asdfvbnm1"
+)
 
 # Redirect URLs
 LOGIN_REDIRECT_URL = "/"
