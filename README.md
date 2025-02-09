@@ -64,30 +64,35 @@ customer_order_service/
 
 1. Clone the repository
 ```bash
-git clone (https://github.com/TangoIndiaMango/sa_customer_order)[Current Repo]
+git clone (Current Repo)[https://github.com/TangoIndiaMango/sa_customer_order]
 cd sa_interview_order
-
+```
 2. Create a virtual environment
 ```bash
 python -m venv venv
 source venv/bin/activate  # On Windows use: venv\Scripts\activate
-
+```
 3. Install dependencies
 ```bash
 pip install -r requirements.txt
-
+```
 4. Set up environment variables
 ```bash
 cp .env.example .env
-
+```
 5. Run migrations
 ```bash
 python manage.py migrate
-
+```
 6. Start development server
 ```bash
 python manage.py runserver
+```
 
+### OR
+```bash
+./start.sh
+```
 
 ## API Endpoints
 ### Authentication
@@ -121,11 +126,7 @@ Testing
 Run the test suite:
 ```bash
 python manage.py test
-
-Generate coverage report:
-```bash
-coverage run manage.py testcoverage report
-
+```
 
 ### CI/CD
 This project uses GitHub Actions for CI/CD. The pipeline:
@@ -134,7 +135,7 @@ Runs tests
 Checks code coverage
 Performs linting
 Deploys to production on successful merge to main branch
-```
+
 ## Docker Deployment
 
 ### Build the Docker image locally
@@ -149,3 +150,4 @@ docker build -t customer-order-service .
 ```bash
 docker build -t your-registry/customer-order-service:latest .
 docker push your-registry/customer-order-service:latest
+```
