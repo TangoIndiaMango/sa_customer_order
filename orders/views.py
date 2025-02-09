@@ -37,7 +37,7 @@ class OrderViewSet(viewsets.ModelViewSet):
         self.perform_create(serializer)
 
         customer = serializer.validated_data["customer"]
-        item = serializer.validated_data["tem"]
+        item = serializer.validated_data["item"]
         message = f"Hello {customer.name}, your order for {item} has been recieved"
         send_sms(customer.phone_number, message)
 
